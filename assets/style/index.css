@@ -11,6 +11,9 @@
     --bleck-20: #00000033;
     --light-gray: #C5C2CA;
     --bg-gray: #E9E9E9;
+    --bg-timer: #3B5F47;
+    --dark-black-40: #18181840;
+
 }
 * {
     box-sizing: border-box;
@@ -128,7 +131,7 @@ body {
 }
 .brands ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 360px;
     height: 34px;
@@ -324,4 +327,52 @@ body {
     position: absolute;
     top: 16px;
     left: 16px;
+}
+.timer {
+    padding: 32px 15px 80px 15px ;
+    background-color: var(--bg-timer);
+}
+.timer h2 {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 32px;
+}
+.timer .countDown {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.timer .countDown li {
+    width: 54px;
+}
+.timer .countDown li .square {
+    width: 54px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 12px 13px;
+    background-color: var(--dark-black-40);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: var(--white);
+}
+.timer .countDown li:first-of-type .square {
+    padding: 12px 20px;
+
+}
+.timer .countDown li span {
+    display: block;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14.06px;
+    text-align: center;
+    color: var(--white);
+    margin-top: 12px;
 }

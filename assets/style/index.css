@@ -7,7 +7,10 @@
     --white-30: #FFFFFF4D;
     --white-80: #FFFFFFCC;
     --dark-black: #181818;
+    --black-60: #00000099;
+    --bleck-20: #00000033;
     --light-gray: #C5C2CA;
+    --bg-gray: #E9E9E9;
 }
 * {
     box-sizing: border-box;
@@ -75,6 +78,8 @@ body {
     position: relative;
 }
 .intro .bottom img {
+    width: 208px;
+    height: 391px;
     position: absolute;
     left: 50%;
     right: 50%;
@@ -155,6 +160,8 @@ body {
     line-height: 18px;
 }
 .newCollection ul .jacketCollection img {
+    width: 197px;
+    height: 339px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -181,6 +188,8 @@ body {
     position: relative;
 }
 .newCollection ul .sunglassCollection img {
+    width: 189px;
+    height: 216px;
     margin-top: 30px;
 }
 .newCollection ul .sunglassCollection .topic {
@@ -200,4 +209,119 @@ body {
     position: absolute;
     top: 109px;
     right: 40px;
+}
+.bestSellers {
+    background-color: var(--bg-gray);
+}
+.bestSellers .container {
+    padding: 32px 15px;
+}
+.bestSellers h2 {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+.bestSellers ul {
+    margin-top: 32px;
+    display: flex;
+    gap: 35px;
+    overflow-x: scroll;
+}
+.bestSellers ul li {
+    position: relative;
+    width: 228px;
+}
+.bestSellers ul li .productPhoto {
+    width: 228px;
+    height: 220px;
+    border-radius: 24px;
+    background-color: var(--white);
+    text-align: center;
+    padding: 32px 0;
+}
+.bestSellers ul li .productInfo {
+    margin-top: 16px;
+    width: 228px;
+}
+.bestSellers ul li .productPhoto img {
+    width: 133px;
+}
+.bestSellers ul li .productInfo .productName {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+}
+.bestSellers ul li .productInfo .productPrice {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+    text-align: left;
+    color: var(--black-60);
+}
+.bestSellers ul li:last-of-type .productInfo .productPrice {
+    text-decoration: line-through;
+    display: inline-block;
+    color: var(--bleck-20);
+}
+.bestSellers ul li:last-of-type .productInfo .discountedPrice {
+    display: inline-block;
+    margin-left: 12px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18.75px;
+    text-align: left;
+}
+.bestSellers ul li .shoppingList {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: var(--yellow);
+    position: absolute;
+    bottom: 2.5px;
+    right: 0;
+    padding: 3px;
+    border: none;
+    cursor: pointer;
+}
+.bestSellers ul li label .faker {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+.bestSellers ul li label .faker-2 {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: none;
+}
+.bestSellers ul li label input {
+    display: none;
+}
+.bestSellers ul li label .checkbox:checked ~ .faker-2 {
+    display: block;
+    cursor: pointer;
+
+}
+.bestSellers ul li .discount {
+    width: 41px;
+    height: 20px;
+    background-color: var(--light-green);
+    border-radius: 6px;
+    padding: 3px 6px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14.06px;
+    text-align: left;
+    color: var(--white);
+    position: absolute;
+    top: 16px;
+    left: 16px;
 }

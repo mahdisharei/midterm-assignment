@@ -7,6 +7,7 @@
     --white-30: #FFFFFF4D;
     --white-80: #FFFFFFCC;
     --dark-black: #181818;
+    --light-gray: #C5C2CA;
 }
 * {
     box-sizing: border-box;
@@ -126,4 +127,77 @@ body {
     align-items: center;
     max-width: 360px;
     height: 34px;
+}
+.newCollection .container {
+    padding: 32px 15px;
+}
+.newCollection h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.newCollection ul {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.newCollection ul .jacketCollection {
+    background-color: var(--light-gray);
+    border-radius: 24px;
+    position: relative;
+}
+.newCollection ul .jacketCollection span {
+    display: block;
+    padding: 18px 0 36px 18px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.newCollection ul .jacketCollection img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.newCollection ul .btn {
+    width: 167px;
+    height: 49px;
+    border-radius: 6px;
+    background-color: var(--dark-black);
+    padding: 16px 40px;
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    text-decoration: none;
+}
+.newCollection ul .sunglassCollection {
+    background-color: var(--yellow);
+    border-radius: 24px;
+    position: relative;
+}
+.newCollection ul .sunglassCollection img {
+    margin-top: 30px;
+}
+.newCollection ul .sunglassCollection .topic {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+}
+.newCollection ul .sunglassCollection .discount {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    position: absolute;
+    top: 109px;
+    right: 40px;
 }

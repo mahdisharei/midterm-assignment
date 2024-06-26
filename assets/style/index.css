@@ -13,7 +13,6 @@
     --bg-gray: #E9E9E9;
     --bg-timer: #3B5F47;
     --dark-black-40: #18181840;
-
 }
 * {
     box-sizing: border-box;
@@ -132,7 +131,7 @@ body {
 }
 .brands ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 360px;
     height: 34px;
@@ -390,6 +389,30 @@ body {
     .intro .bottom .price {
         display: none;
     }
+    .brands ul .adidas {
+        width: 41px;
+        height: 10px;
+    }
+    .brands ul .prada {
+        width: 64.4px;
+        height: 10px;
+    }
+    .brands ul .nike {
+        width: 28px;
+        height: 10px;
+    }
+    .brands ul .hm {
+        width: 28px;
+        height: 10px;
+    }
+    .brands ul .gucci {
+        width: 40px;
+        height: 8px;
+    }
+    .brands ul .blk {
+        width: 36px;
+        height: 10px;
+    }
 }
 @media screen and (min-width: 1400px) {
     .container {
@@ -414,6 +437,9 @@ body {
         display: flex;
         justify-content: space-between;
         padding-top: 25px;
+    }
+    .intro header a {
+        text-decoration: none;
     }
     .intro header h1 {
         font-size: 36px;
@@ -510,5 +536,16 @@ body {
     }
     .intro .top .btn {
         margin-top: 49px;
+    }
+    .brands {
+        height: 100px;
+        min-width: none;
+    }
+    .brands ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: none;
+        height: 100px;
     }
 }

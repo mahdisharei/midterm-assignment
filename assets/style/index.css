@@ -30,8 +30,7 @@ body {
 }
 .intro {
     background-image: linear-gradient(to bottom right, var(--dark-green), var(--light-green));
-    height: 100vh;
-    min-height: 640px;
+    height: 640px;
     min-width: 360px;
 }
 .intro .top {
@@ -382,4 +381,134 @@ body {
     text-align: center;
     color: var(--white);
     margin-top: 12px;
+}
+@media screen and (max-width: 1399px) {
+    header {
+        display: none;
+    }
+    .intro .bottom .discount,
+    .intro .bottom .price {
+        display: none;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 1320px;
+        margin: 0 auto;
+        max-width: none;
+    }
+    .intro {
+        min-width: none;
+        height: 750px;
+    }
+    .intro .mobile-nav {
+        display: none;
+    }
+    .intro .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .intro header {
+        width: 1320px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+    }
+    .intro header h1 {
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 40px;
+        text-align: center;
+        color: var(--white);
+    }
+    .intro header .menu {
+        display: flex;
+        gap: 32px;
+    }
+    .intro header .menu li a {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: center;
+        color: var(--white-30);
+        text-decoration: none;
+    }
+    .intro header .menu li:first-of-type a {
+        color: var(--white);
+    }
+    .intro header .btn {
+        width: 40px;    
+        height: 40px;
+        background-color: var(--yellow);
+        border-radius: 20px;
+        padding: 12px;
+    }
+    .intro .top {
+        padding: 85px 0 0 0;
+    }
+    .intro .bottom img {
+        width: 342px;   
+        height: 619px;
+        left: -340px;
+        top: 65px;        
+    }
+    .intro .bottom .green-circul {
+        width: 318px;
+        height: 318px;
+    }
+    .intro .bottom .first-circul {
+        top: 290px;
+        left: -580px;
+        z-index: 1;
+    }
+    .intro .bottom .second-circul {
+        top: 190px;
+        left: -410px;
+        z-index: 1;
+    }
+    .intro .bottom .discount {
+        width: 110px;
+        height: 110px;
+        border-radius: 72px;
+        padding: 25px 15px 15px 15px;
+        color: var(--dark-black);
+        background-color: var(--yellow);
+        position: absolute;
+        top: 180px;
+        left: -510px;
+        z-index: 4;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 30.47px;
+        text-align: center;
+    }
+    .intro .bottom .price {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 43.2px;
+        text-align: center;
+        color: var(--white);
+        position: absolute;
+        top: 140px;
+        left: -570px;
+    }
+    .intro .top .year {
+        font-size: 60px;
+        line-height: 72px;
+    }
+    .intro .top h2 {
+        font-size: 112px;
+        line-height: 100px;
+        margin: 24px 0;
+        letter-spacing: 0.13em;
+    }
+    .intro .top .discount {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .intro .top .btn {
+        margin-top: 49px;
+    }
 }

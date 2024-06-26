@@ -548,4 +548,56 @@ body {
         max-width: none;
         height: 100px;
     }
+    .newCollection {
+        min-width: unset;
+    }
+    .newCollection .container {
+        padding: 70px 0px;
+    }
+    .newCollection h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .newCollection ul {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+    .newCollection ul .jacketCollection {
+        width: 500px;
+    }
+    .newCollection ul .jacketCollection span {
+        padding: 24px 0 8px 25px;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .newCollection ul .jacketCollection img {
+        width: 278px;
+        height: 478px;
+    }
+    .newCollection ul .btn {
+        right: 24px;
+        bottom: 24px;
+    }
+    .newCollection ul .sunglassCollection {
+        width: 740px;
+    }
+    .newCollection ul .sunglassCollection img {
+        width: 455px;
+        height: 520px;
+        margin-top: 30px;
+    }
+    .newCollection ul .sunglassCollection .topic {
+        font-size: 24px;
+        line-height: 40px;
+        top: 72px;
+        right: 98px;
+    }
+    .newCollection ul .sunglassCollection .discount {
+        font-size: 48px;
+        line-height: 56.25px;
+        top: 247px;
+        right: 96px;
+    }
 }

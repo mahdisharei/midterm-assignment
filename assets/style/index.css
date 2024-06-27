@@ -279,9 +279,9 @@ body {
     display: inline-block;
     margin-left: 12px;
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 18.75px;
+    line-height: 16.41px;
     text-align: left;
 }
 .bestSellers ul li .shoppingList {
@@ -412,6 +412,9 @@ body {
     .brands ul .blk {
         width: 36px;
         height: 10px;
+    }
+    .bestSellers .loadMoreButton {
+        display: none;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -599,5 +602,63 @@ body {
         line-height: 56.25px;
         top: 247px;
         right: 96px;
+    }
+    .bestSellers {
+        min-width: unset;
+    }
+    .bestSellers .container {
+        padding: 70px 0;
+    }
+    .bestSellers h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .bestSellers ul {
+        margin: 70px 0;
+        overflow-x: unset;
+    }
+    .bestSellers ul li {
+        position: relative;
+        width: 304px;
+    }
+    .bestSellers ul li .productPhoto {
+        width: 304px;
+        height: 347px;
+        padding: 54px 0;
+    }
+    .bestSellers ul li .productPhoto img {
+        width: 214px;
+        height: 239px;
+    }
+    .bestSellers ul li .productInfo .productName {
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+    .bestSellers ul li .productInfo .productPrice {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+    .bestSellers ul li:last-of-type .productInfo .discountedPrice {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+    .bestSellers ul li .shoppingList {
+        width: 40px;
+        height: 40px;
+    }
+    .bestSellers .loadMoreButton {
+        width: 207px;
+        height: 49px;
+        border-radius: 6px;
+        padding: 16px 40px;
+        background-color: var(--dark-black);
+        margin: 0 auto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        text-align: left;
+        color: var(--white);
+        display: block;
+        text-decoration: none;
     }
 }

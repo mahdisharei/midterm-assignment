@@ -333,12 +333,14 @@ body {
     left: 16px;
 }
 .timer {
-    padding: 32px 15px 80px 15px ;
+    min-width: 360px;
     background-color: var(--bg-timer);
+}
+.timer .container {
+    padding: 32px 15px 80px 15px ;
     min-width: 360px;
 }
 .timer h2 {
-    font-family: Lato;
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
@@ -369,7 +371,6 @@ body {
 }
 .timer .countDown li:first-of-type .square {
     padding: 12px 20px;
-
 }
 .timer .countDown li span {
     display: block;
@@ -414,6 +415,9 @@ body {
         height: 10px;
     }
     .bestSellers .loadMoreButton {
+        display: none;
+    }
+    .timer .left {
         display: none;
     }
 }
@@ -660,5 +664,87 @@ body {
         color: var(--white);
         display: block;
         text-decoration: none;
+    }
+    .timer {
+        position: relative;
+        z-index: 0;
+    }
+    .timer .container {
+        padding: 0;
+        width: 1320px;
+        display: flex;
+        justify-content: center;
+    }
+    .timer .bg {
+        position: absolute;
+        left: 0;
+        background-color: var(--yellow);
+        height: 100%;
+        z-index: 1;
+        width: 30%;
+    }
+    .timer .left {
+        background-color: var(--yellow);
+        width: 30%;
+        position: relative;
+    }
+    .timer .left .discount {
+        font-family: Roboto;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 48px;
+        position: absolute;
+        top: 80px;
+        z-index: 2;
+    }
+    .timer .left img {
+        position: absolute;
+        top: 160px;
+        z-index: 2;
+    }
+    .timer .right {
+        padding: 78px 0 78px 165px;
+        width: 70%;
+    }
+    .timer h2 {
+        font-size: 64px;
+        line-height: 48px;
+        text-align: left;
+        margin-bottom: 93px;
+    }
+    .timer .countDown {
+        gap: 48px;
+        justify-content: left;
+    }
+    .timer .countDown li {
+        width: 153.5px;
+    }
+    .timer .countDown li .square {
+        width: 153.5px;
+        height: 112px;
+        padding: 32px 38px;
+        font-size: 64px;
+        line-height: 48px;
+        text-align: left;
+        color: var(--white);
+    }
+    .timer .countDown li:first-of-type .square {
+        padding: 32px 58px;
+    }
+    .timer .countDown li span {
+        display: block;
+        font-family: Roboto;
+        font-size: 24px;
+        line-height: 28.13px;
+    }
+}
+@media screen and (min-width: 3300px) {
+    .timer .bg {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 6600px) {
+    .timer .bg {
+        width: 45%;
     }
 }
